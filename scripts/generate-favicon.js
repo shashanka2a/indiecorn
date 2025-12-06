@@ -34,3 +34,4 @@ console.log('💡 Note: For production, convert SVG to ICO format using a tool l
 console.log('   - https://realfavicongenerator.net/')
 console.log('   - Or use sharp/convert libraries to generate favicon.ico')
 
+
