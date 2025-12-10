@@ -87,9 +87,8 @@ export default function Home() {
             Unicorn <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E599] to-emerald-500">tomorrow.</span>
           </h1>
 
-          <p className="max-w-4xl text-lg md:text-2xl text-gray-300 mb-12 leading-relaxed animate-fade-in-up font-light" style={{ animationDelay: '200ms' }}>
-            <span className="text-white font-medium">Tony Stark built his suit in a cave.</span> <br/>
-            I build startups on a 2022 MacBook Pro. No team. No VC. Just AI and focus.
+          <p className="max-w-5xl text-lg md:text-xl text-gray-300 mb-12 leading-relaxed animate-fade-in-up font-light" style={{ animationDelay: '200ms' }}>
+            <span className="text-white font-medium">Tony Stark built his suit in a cave.</span> I am trying to build startups on a MacBook Pro 2022, no team, no VC, just AI and focus.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto animate-fade-in-up" style={{ animationDelay: '300ms' }}>

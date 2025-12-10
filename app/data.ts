@@ -4,7 +4,7 @@ export const PROJECTS = [
     emoji: "🏫",
     status: "Live",
     desc: "Ultimate campus life platform. Connect, buy, sell, ride, and discover everything campus has to offer.",
-    tags: ["Campus", "Social", "Marketplace"],
+    tags: ["Campus", "Marketplace", "Marketplace"],
     color: "from-blue-500/20 to-indigo-500/20",
     link: "https://www.kampus.fun/"
   },
@@ -31,12 +31,12 @@ export const PROJECTS = [
     emoji: "✉️",
     status: "Live",
     desc: "India's trusted budget wedding directory. Verified vendors for every ceremony in Tier-2 & Tier-3 cities.",
-    tags: ["Marketplace", "Photo", "Booking"],
+    tags: ["Marketplace", "Services", "Booking"],
     color: "from-pink-500/20 to-red-500/20",
     link: "https://shaadiverse.app/"
   },
   {
-    title: "Grograte",
+    title: "Grogate",
     emoji: "🧅",
     status: "Coming Soon",
     desc: "Fresh-from-farm produce delivered to gated communities within 12-24 hours via trusted local farmers.",
@@ -84,7 +84,7 @@ export const PROJECTS = [
     title: "Payd",
     emoji: "💳",
     status: "Coming Soon",
-    desc: "Your payments, simplified. Business invoices, creator tips, global transfers — all unified.",
+    desc: "Your payments, simplified. Business invoices, creator tips, global transfers all unified.",
     tags: ["Fintech", "Payments", "Crypto"],
     color: "from-emerald-500/20 to-teal-500/20",
     link: "https://www.payd.plus/"
@@ -94,7 +94,7 @@ export const PROJECTS = [
     emoji: "🏨",
     status: "Coming Soon",
     desc: "End-to-end operating system for vacation hotel managers. Operational automation.",
-    tags: ["Hospitality", "Property", "SaaS"],
+    tags: ["Hospitality", "SaaS", "SaaS"],
     color: "from-sky-500/20 to-blue-500/20",
     link: "https://www.staylinq.co/"
   },
@@ -121,7 +121,7 @@ export const PROJECTS = [
     emoji: "🎨",
     status: "Coming Soon",
     desc: "AI meets creativity. Ultimate creative platform with templates, editing tools, and AI.",
-    tags: ["AI", "Creative", "Content"],
+    tags: ["AI Image", "Creative", "Content"],
     color: "from-rose-500/20 to-pink-500/20",
     link: "https://www.tryaura.art/"
   },
