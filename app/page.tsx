@@ -208,7 +208,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-500 rounded-full" />
-                  15 active projects
+                  16 active projects
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-purple-500 rounded-full" />

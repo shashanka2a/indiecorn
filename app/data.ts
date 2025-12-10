@@ -72,6 +72,15 @@ export const PROJECTS = [
     link: "https://www.staylinq.co/"
   },
   {
+    title: "Homevisor",
+    emoji: "🏠",
+    status: "Live",
+    desc: "24/7 home manager that tracks assets, forecasts expenses, and coordinates all maintenance so homeowners can delegate instead of DIY.",
+    tags: ["Home", "Maintenance", "SaaS"],
+    color: "from-purple-500/20 to-indigo-500/20",
+    link: "https://www.homevisor.co/"
+  },
+  {
     title: "ProductJoy",
     emoji: "🚀",
     status: "Live",
@@ -186,5 +195,6 @@ export const ARTICLES = [
     link: "https://medium.com/@jagannathamshashank/from-assignments-to-vibe-coding-how-ai-evolved-and-redefined-industries-7547a0e765c4"
   }
 ];
+
 
 

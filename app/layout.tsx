@@ -5,9 +5,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'IndieCorn - Indie today. Unicorn tomorrow.',
-  description: 'Building the future, one indie project at a time. Startup studio empowering indie founders to build the next generation of unicorns with AI-powered tools and community support.',
-  keywords: ['indiecorn', 'startup studio', 'indie founders', 'AI startups', 'unicorn', 'indie development', 'startup tools'],
+  title: 'IndieCorn - Indie today. Unicorn tomorrow. Featuring Homevisor.',
+  description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager that tracks assets, forecasts expenses, and coordinates maintenance so homeowners can delegate instead of DIY.',
+  keywords: ['indiecorn', 'homevisor', 'home manager', 'home maintenance', 'startup studio', 'indie founders', 'AI startups', 'unicorn', 'indie development', 'startup tools'],
   authors: [{ name: 'IndieCorn' }],
   creator: 'IndieCorn',
   publisher: 'IndieCorn',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://indiecorn.xyz',
-    title: 'IndieCorn - Indie today. Unicorn tomorrow.',
-    description: 'Building the future, one indie project at a time. Startup studio empowering indie founders to build the next generation of unicorns.',
+    title: 'IndieCorn - Indie today. Unicorn tomorrow. Featuring Homevisor.',
+    description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager that tracks assets, forecasts expenses, and coordinates maintenance so homeowners can delegate instead of DIY.',
     siteName: 'IndieCorn',
     images: [
       {
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'IndieCorn - Indie today. Unicorn tomorrow.',
-    description: 'Building the future, one indie project at a time. Startup studio empowering indie founders.',
+    title: 'IndieCorn - Indie today. Unicorn tomorrow. Featuring Homevisor.',
+    description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager for predictable, managed homeownership.',
     images: ['/og-image.png'],
     creator: '@indiecorn',
   },
