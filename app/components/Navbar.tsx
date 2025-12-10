@@ -7,12 +7,41 @@ import Link from 'next/link'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    const sectionIds = ['mission', 'projects', 'journal', 'follow']
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+        if (visible?.target?.id) {
+          setActiveSection(visible.target.id)
+        }
+      },
+      {
+        root: null,
+        rootMargin: '-45% 0px -45% 0px',
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      }
+    )
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
+  const isActive = (id: string) => activeSection === id
 
   return (
     <>
@@ -29,12 +58,26 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 bg-white/5 px-8 py-2.5 rounded-full border border-white/5 backdrop-blur-sm shadow-2xl">
-            {['Mission', 'Projects', 'Journal', 'Follow'].map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} className="text-sm font-medium text-gray-400 hover:text-white transition-colors relative group">
-                {item}
-                <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-[#00E599] transition-all group-hover:w-full group-hover:left-0 opacity-0 group-hover:opacity-100" />
-              </a>
-            ))}
+            {['Mission', 'Projects', 'Journal', 'Follow'].map((item) => {
+              const id = item.toLowerCase()
+              const active = isActive(id)
+              return (
+                <a
+                  key={item}
+                  href={`#${id}`}
+                  className={`text-sm font-medium transition-colors relative group ${
+                    active ? 'text-white' : 'text-gray-400 hover:text-white'
+                  }`}
+                >
+                  {item}
+                  <span
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-[#00E599] transition-all ${
+                      active ? 'w-full opacity-100' : 'w-0 opacity-0 group-hover:w-full group-hover:opacity-100 group-hover:left-0'
+                    }`}
+                  />
+                </a>
+              )
+            })}
           </div>
 
           {/* Contact & Mobile Toggle */}
