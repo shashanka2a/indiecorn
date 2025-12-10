@@ -81,13 +81,13 @@ export const PROJECTS = [
     link: "https://www.layr.plus/"
   },
   {
-    title: "OpenGig",
-    emoji: "⚡",
+    title: "Threadz",
+    emoji: "👕",
     status: "Coming Soon",
-    desc: "Turn client inquiries into ready-to-build briefs. Automate onboarding, save time.",
-    tags: ["AI", "Freelancer", "Auto"],
-    color: "from-violet-500/20 to-purple-500/20",
-    link: "https://opengig.net/"
+    desc: "Your Style, Your Rules. From bold graphics to AI designs, create apparel that speaks your language. No templates. No limits. Just pure expression.",
+    tags: ["AI", "Streetwear", "Design"],
+    color: "from-purple-500/20 to-indigo-500/20",
+    link: "https://www.threadz.studio/"
   },
   {
     title: "StayLinq",
