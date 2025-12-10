@@ -12,7 +12,7 @@ export const PROJECTS = [
     title: "MenuOS",
     emoji: "🍽️",
     status: "Live",
-    desc: "MenuOS simplifies order management, increases revenue, and delivers a seamless dining experience with our all-in-one platform.",
+    desc: "MenuOS simplifies order management, increases revenue, and delivers a seamless dining experience.",
     tags: ["Restaurant", "SaaS", "QR"],
     color: "from-red-500/20 to-rose-500/20",
     link: "https://www.menuos.app/"

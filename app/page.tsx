@@ -70,7 +70,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative pt-32 pb-28 overflow-hidden">
+      <section className="relative min-h-screen pt-28 pb-20 overflow-hidden flex items-center">
         {/* Background Gradients */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#00E599] opacity-[0.04] blur-[120px] rounded-full pointer-events-none" />
         
