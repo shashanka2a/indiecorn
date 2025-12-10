@@ -84,3 +84,4 @@ The favicon uses a Lucide Rocket icon, automatically detected by Next.js 15 from
 
 
 
+

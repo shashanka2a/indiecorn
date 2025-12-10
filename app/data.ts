@@ -42,7 +42,7 @@ export const PROJECTS = [
     desc: "Fresh-from-farm produce delivered to gated communities within 12-24 hours via trusted local farmers.",
     tags: ["Agri", "Fresh Produce", "Community"],
     color: "from-green-500/20 to-emerald-500/20",
-    link: "#"
+    link: "https://www.grogate.com/"
   },
   {
     title: "Threadz",
