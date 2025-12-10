@@ -74,21 +74,21 @@ export default function Home() {
         {/* Background Gradients */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#00E599] opacity-[0.04] blur-[120px] rounded-full pointer-events-none" />
         
-        <div className="w-full px-6 md:px-12 relative z-10 text-center flex flex-col items-center">
+        <div className="w-full px-6 md:px-12 relative z-10 text-center flex flex-col items-center gap-6 md:gap-8">
           
-          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-lg bg-black/50 border border-white/10 text-green-400 font-mono text-sm mb-8 animate-fade-in-up hover:border-[#00E599]/30 transition-colors shadow-2xl">
+          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-lg bg-black/50 border border-white/10 text-green-400 font-mono text-sm animate-fade-in-up hover:border-[#00E599]/30 transition-colors shadow-2xl">
             <Terminal className="w-4 h-4" />
             <span>indie_corn@startup:~$</span>
             <span className="w-2 h-4 bg-green-400 animate-pulse ml-1" />
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-[1.1] animate-fade-in-up" style={{ animationDelay: '100ms' }}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1] animate-fade-in-up" style={{ animationDelay: '100ms' }}>
             Indie <span className="text-gray-500">today.</span> <br />
             Unicorn <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E599] to-emerald-500">tomorrow.</span>
           </h1>
 
-          <p className="max-w-5xl text-lg md:text-xl text-gray-300 mb-12 leading-relaxed animate-fade-in-up font-light" style={{ animationDelay: '200ms' }}>
-            <span className="text-white font-medium">Tony Stark built his suit in a cave.</span> I am trying to build startups on a MacBook Pro 2022, no team, no VC, just AI and focus.
+          <p className="max-w-5xl text-lg md:text-xl text-gray-300 leading-relaxed animate-fade-in-up font-light" style={{ animationDelay: '200ms' }}>
+            <span className="text-white font-medium">Tony Stark built his suit in a cave.</span> I am trying to build startups on a MacBook Pro 2022, no team, no VC.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto animate-fade-in-up" style={{ animationDelay: '300ms' }}>
