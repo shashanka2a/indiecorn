@@ -1,48 +1,12 @@
 export const PROJECTS = [
   {
-    title: "Kampus.fun",
+    title: "Kampus",
     emoji: "🏫",
     status: "Live",
     desc: "Ultimate campus life platform. Connect, buy, sell, ride, and discover everything campus has to offer.",
     tags: ["Campus", "Social", "Marketplace"],
     color: "from-blue-500/20 to-indigo-500/20",
     link: "https://www.kampus.fun/"
-  },
-  {
-    title: "Markit.one",
-    emoji: "⚡",
-    status: "Coming Soon",
-    desc: "Simplify forms, QR codes, and hiring. Essential startup tools to launch faster and scale smarter.",
-    tags: ["SaaS", "Startup", "Tools"],
-    color: "from-yellow-500/20 to-orange-500/20",
-    link: "https://www.markit.one/"
-  },
-  {
-    title: "Hackr.plus",
-    emoji: "🏆",
-    status: "Coming Soon",
-    desc: "Host smarter, judge faster, hire better. Complete hackathon platform with AI-powered management.",
-    tags: ["Events", "AI", "Talent"],
-    color: "from-purple-500/20 to-pink-500/20",
-    link: "https://www.hackr.plus/"
-  },
-  {
-    title: "Payd.plus",
-    emoji: "💳",
-    status: "Coming Soon",
-    desc: "Your payments, simplified. Business invoices, creator tips, global transfers — all unified.",
-    tags: ["Fintech", "Payments", "Crypto"],
-    color: "from-emerald-500/20 to-teal-500/20",
-    link: "https://www.payd.plus/"
-  },
-  {
-    title: "Layr.plus",
-    emoji: "🤖",
-    status: "Coming Soon",
-    desc: "All the layers you need to build. Create, design, and deploy from concept to completion.",
-    tags: ["Dev Tools", "Design", "SaaS"],
-    color: "from-cyan-500/20 to-blue-500/20",
-    link: "https://www.layr.plus/"
   },
   {
     title: "MenuOS",
@@ -54,9 +18,72 @@ export const PROJECTS = [
     link: "https://www.menuos.app/"
   },
   {
+    title: "Homevisor",
+    emoji: "🏠",
+    status: "Live",
+    desc: "24/7 home manager that tracks assets, forecasts expenses, and coordinates all maintenance.",
+    tags: ["Home", "Maintenance", "SaaS"],
+    color: "from-purple-500/20 to-indigo-500/20",
+    link: "https://www.homevisor.co/"
+  },
+  {
+    title: "ShaadiVerse",
+    emoji: "📸",
+    status: "Live",
+    desc: "India's trusted budget wedding directory. Verified vendors for every ceremony in Tier-2 & Tier-3 cities.",
+    tags: ["Marketplace", "Photo", "Booking"],
+    color: "from-pink-500/20 to-red-500/20",
+    link: "https://shaadiverse.app/"
+  },
+  {
+    title: "Grograte",
+    emoji: "🧅",
+    status: "Coming Soon",
+    desc: "Fresh-from-farm produce delivered to gated communities within 12-24 hours via trusted local farmers.",
+    tags: ["Agri", "Fresh Produce", "Community"],
+    color: "from-green-500/20 to-emerald-500/20",
+    link: "#"
+  },
+  {
+    title: "Markit",
+    emoji: "⚡",
+    status: "Coming Soon",
+    desc: "Simplify forms, QR codes, and hiring. Essential startup tools to launch faster and scale smarter.",
+    tags: ["SaaS", "Startup", "Tools"],
+    color: "from-yellow-500/20 to-orange-500/20",
+    link: "https://www.markit.one/"
+  },
+  {
+    title: "Hackr",
+    emoji: "🏆",
+    status: "Coming Soon",
+    desc: "Host smarter, judge faster, hire better. Complete hackathon platform with AI-powered management.",
+    tags: ["Events", "AI", "Talent"],
+    color: "from-purple-500/20 to-pink-500/20",
+    link: "https://www.hackr.plus/"
+  },
+  {
+    title: "Payd",
+    emoji: "💳",
+    status: "Coming Soon",
+    desc: "Your payments, simplified. Business invoices, creator tips, global transfers — all unified.",
+    tags: ["Fintech", "Payments", "Crypto"],
+    color: "from-emerald-500/20 to-teal-500/20",
+    link: "https://www.payd.plus/"
+  },
+  {
+    title: "Layr",
+    emoji: "🤖",
+    status: "Coming Soon",
+    desc: "All the layers you need to build. Create, design, and deploy from concept to completion.",
+    tags: ["Dev Tools", "Design", "SaaS"],
+    color: "from-cyan-500/20 to-blue-500/20",
+    link: "https://www.layr.plus/"
+  },
+  {
     title: "OpenGig",
     emoji: "⚡",
-    status: "Live",
+    status: "Coming Soon",
     desc: "Turn client inquiries into ready-to-build briefs. Automate onboarding, save time.",
     tags: ["AI", "Freelancer", "Auto"],
     color: "from-violet-500/20 to-purple-500/20",
@@ -65,34 +92,16 @@ export const PROJECTS = [
   {
     title: "StayLinq",
     emoji: "🏨",
-    status: "Live",
-    desc: "End-to-end operating system for vacation rental managers. Operational automation.",
+    status: "Coming Soon",
+    desc: "End-to-end operating system for vacation hotel managers. Operational automation.",
     tags: ["Hospitality", "Property", "SaaS"],
     color: "from-sky-500/20 to-blue-500/20",
     link: "https://www.staylinq.co/"
   },
   {
-    title: "Homevisor",
-    emoji: "🏠",
-    status: "Live",
-    desc: "24/7 home manager that tracks assets, forecasts expenses, and coordinates all maintenance so homeowners can delegate instead of DIY.",
-    tags: ["Home", "Maintenance", "SaaS"],
-    color: "from-purple-500/20 to-indigo-500/20",
-    link: "https://www.homevisor.co/"
-  },
-  {
-    title: "ProductJoy",
-    emoji: "🚀",
-    status: "Live",
-    desc: "Premium web & mobile app development. From wireframes to launch, at the speed of ambition.",
-    tags: ["Dev Agency", "Web", "Mobile"],
-    color: "from-orange-500/20 to-amber-500/20",
-    link: "https://www.productjoy.co/"
-  },
-  {
     title: "Momint",
     emoji: "💎",
-    status: "Live",
+    status: "Coming Soon",
     desc: "Own moments from your favorite influencers. Exclusive NFTs with meet-and-greets.",
     tags: ["Web3", "NFT", "Creator"],
     color: "from-indigo-500/20 to-violet-500/20",
@@ -101,7 +110,7 @@ export const PROJECTS = [
   {
     title: "WhatIfStudio",
     emoji: "🎬",
-    status: "Live",
+    status: "Coming Soon",
     desc: "Rewriting sad endings beautifully. Exploring alternate timelines through AI filmmaking.",
     tags: ["AI Film", "Creative", "Story"],
     color: "from-fuchsia-500/20 to-pink-500/20",
@@ -110,25 +119,16 @@ export const PROJECTS = [
   {
     title: "Aura Art",
     emoji: "🎨",
-    status: "Live",
+    status: "Coming Soon",
     desc: "AI meets creativity. Ultimate creative platform with templates, editing tools, and AI.",
     tags: ["AI", "Creative", "Content"],
     color: "from-rose-500/20 to-pink-500/20",
     link: "https://www.tryaura.art/"
   },
   {
-    title: "ShaadiVerse",
-    emoji: "📸",
-    status: "Live",
-    desc: "Capture life's best moments. Find the perfect photographer for your special moments.",
-    tags: ["Marketplace", "Photo", "Booking"],
-    color: "from-pink-500/20 to-red-500/20",
-    link: "https://shaadiverse.app/"
-  },
-  {
     title: "OmniTrix",
     emoji: "🔗",
-    status: "Live",
+    status: "Coming Soon",
     desc: "Where IoT meets intelligence to make supply chains with AI agents and blockchain.",
     tags: ["IoT", "Blockchain", "AI"],
     color: "from-blue-500/20 to-cyan-500/20",
@@ -137,7 +137,7 @@ export const PROJECTS = [
   {
     title: "BlueBeetle",
     emoji: "🤖",
-    status: "Live",
+    status: "Coming Soon",
     desc: "Agentic intelligence for markets that never sleep. The living co-pilot for traders.",
     tags: ["AI", "Trading", "Finance"],
     color: "from-slate-500/20 to-gray-500/20",

@@ -1,11 +1,68 @@
 'use client'
 
+import { useState } from 'react'
 import { ArrowRight, Terminal, Cpu, Heart } from 'lucide-react'
 import Button from './components/Button'
 import ProjectCard from './components/ProjectCard'
 import Navbar from './components/Navbar'
 import FollowSection from './components/FollowSection'
 import { PROJECTS, ARTICLES } from './data'
+
+function JournalList() {
+  const [showAllArticles, setShowAllArticles] = useState(false)
+  const visibleArticles = showAllArticles ? ARTICLES : ARTICLES.slice(0, 3)
+  const hasMore = ARTICLES.length > 3
+
+  return (
+    <div className="grid gap-8">
+      {visibleArticles.map((article, index) => (
+        <a 
+          key={index} 
+          href={article.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group cursor-pointer border border-gray-200 hover:border-[#00B97A] p-8 rounded-3xl transition-all hover:shadow-xl bg-white relative overflow-hidden block"
+        >
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#00B97A]/5 rounded-bl-[100px] transition-transform group-hover:scale-150 duration-700" />
+          
+          <div className="flex flex-col md:flex-row gap-6 relative z-10">
+            <div className="flex-1">
+              <div className="flex items-center gap-3 mb-4">
+                {article.tags.map((tag, i) => (
+                  <span key={i} className="text-xs font-bold text-[#00B97A] bg-[#00B97A]/10 px-3 py-1 rounded-full uppercase tracking-wider">
+                    {tag}
+                  </span>
+                ))}
+                <span className="text-xs text-gray-400 font-mono">
+                  {article.date} • {article.readTime} read
+                </span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-[#00B97A] transition-colors">
+                {article.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                {article.excerpt}
+              </p>
+            </div>
+            <div className="flex items-end justify-start md:justify-end">
+              <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-[#00B97A] group-hover:border-[#00B97A] group-hover:text-white transition-all">
+                <ArrowRight className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
+              </div>
+            </div>
+          </div>
+        </a>
+      ))}
+
+      {hasMore && (
+        <div className="flex justify-center">
+          <Button variant="white" className="border-gray-200" onClick={() => setShowAllArticles(!showAllArticles)}>
+            {showAllArticles ? 'Show Less' : 'Show More'}
+          </Button>
+        </div>
+      )}
+    </div>
+  )
+}
 
 export default function Home() {
   return (
@@ -125,50 +182,9 @@ export default function Home() {
               </h2>
               <p className="text-gray-500 text-lg">Thoughts, lessons, and insights from the indie developer journey.</p>
             </div>
-            <Button variant="white" className="mt-6 md:mt-0 border-gray-200">
-              View All Posts
-            </Button>
           </div>
 
-          <div className="grid gap-8">
-            {ARTICLES.map((article, index) => (
-              <a 
-                key={index} 
-                href={article.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group cursor-pointer border border-gray-200 hover:border-[#00B97A] p-8 rounded-3xl transition-all hover:shadow-xl bg-white relative overflow-hidden block"
-              >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#00B97A]/5 rounded-bl-[100px] transition-transform group-hover:scale-150 duration-700" />
-                
-                <div className="flex flex-col md:flex-row gap-6 relative z-10">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-4">
-                      {article.tags.map((tag, i) => (
-                        <span key={i} className="text-xs font-bold text-[#00B97A] bg-[#00B97A]/10 px-3 py-1 rounded-full uppercase tracking-wider">
-                          {tag}
-                        </span>
-                      ))}
-                      <span className="text-xs text-gray-400 font-mono">
-                        {article.date} • {article.readTime} read
-                      </span>
-                    </div>
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-[#00B97A] transition-colors">
-                      {article.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed text-lg">
-                      {article.excerpt}
-                    </p>
-                  </div>
-                  <div className="flex items-end justify-start md:justify-end">
-                    <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-[#00B97A] group-hover:border-[#00B97A] group-hover:text-white transition-all">
-                      <ArrowRight className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
+          <JournalList />
         </div>
       </section>
 
@@ -208,7 +224,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-500 rounded-full" />
-                  16 active projects
+                  4 active projects
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-purple-500 rounded-full" />

@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'IndieCorn - Indie today. Unicorn tomorrow. Featuring Homevisor.',
-  description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager that tracks assets, forecasts expenses, and coordinates maintenance so homeowners can delegate instead of DIY.',
+  description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager that tracks assets, forecasts expenses, and coordinates maintenance.',
   keywords: ['indiecorn', 'homevisor', 'home manager', 'home maintenance', 'startup studio', 'indie founders', 'AI startups', 'unicorn', 'indie development', 'startup tools'],
   authors: [{ name: 'IndieCorn' }],
   creator: 'IndieCorn',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://indiecorn.xyz',
     title: 'IndieCorn - Indie today. Unicorn tomorrow. Featuring Homevisor.',
-    description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager that tracks assets, forecasts expenses, and coordinates maintenance so homeowners can delegate instead of DIY.',
+    description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager that tracks assets, forecasts expenses, and coordinates maintenance.',
     siteName: 'IndieCorn',
     images: [
       {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'IndieCorn - Indie today. Unicorn tomorrow. Featuring Homevisor.',
-    description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager for predictable, managed homeownership.',
+    description: 'Building the future, one indie project at a time. Now featuring Homevisor — the 24/7 home manager that tracks assets, forecasts expenses, and coordinates maintenance.',
     images: ['/og-image.png'],
     creator: '@indiecorn',
   },
