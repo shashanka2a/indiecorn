@@ -12,7 +12,7 @@ export const PROJECTS = [
     title: "MenuOS",
     emoji: "🍽️",
     status: "Live",
-    desc: "Digital menu platform for restaurants. Scan, order, serve — no tablets, no delays.",
+    desc: "MenuOS simplifies order management, increases revenue, and delivers a seamless dining experience with our all-in-one platform.",
     tags: ["Restaurant", "SaaS", "QR"],
     color: "from-red-500/20 to-rose-500/20",
     link: "https://www.menuos.app/"
@@ -28,7 +28,7 @@ export const PROJECTS = [
   },
   {
     title: "ShaadiVerse",
-    emoji: "📸",
+    emoji: "✉️",
     status: "Live",
     desc: "India's trusted budget wedding directory. Verified vendors for every ceremony in Tier-2 & Tier-3 cities.",
     tags: ["Marketplace", "Photo", "Booking"],
@@ -43,6 +43,24 @@ export const PROJECTS = [
     tags: ["Agri", "Fresh Produce", "Community"],
     color: "from-green-500/20 to-emerald-500/20",
     link: "#"
+  },
+  {
+    title: "Threadz",
+    emoji: "👕",
+    status: "Coming Soon",
+    desc: "Your Style, Your Rules. From bold graphics to AI designs, create apparel that speaks your language.",
+    tags: ["AI", "Streetwear", "Design"],
+    color: "from-purple-500/20 to-indigo-500/20",
+    link: "https://www.threadz.studio/"
+  },
+  {
+    title: "Layr",
+    emoji: "🧱",
+    status: "Coming Soon",
+    desc: "All the layers you need to build. Create, design, and deploy from concept to completion.",
+    tags: ["Dev Tools", "Design", "SaaS"],
+    color: "from-cyan-500/20 to-blue-500/20",
+    link: "https://www.layr.plus/"
   },
   {
     title: "Markit",
@@ -70,24 +88,6 @@ export const PROJECTS = [
     tags: ["Fintech", "Payments", "Crypto"],
     color: "from-emerald-500/20 to-teal-500/20",
     link: "https://www.payd.plus/"
-  },
-  {
-    title: "Layr",
-    emoji: "🤖",
-    status: "Coming Soon",
-    desc: "All the layers you need to build. Create, design, and deploy from concept to completion.",
-    tags: ["Dev Tools", "Design", "SaaS"],
-    color: "from-cyan-500/20 to-blue-500/20",
-    link: "https://www.layr.plus/"
-  },
-  {
-    title: "Threadz",
-    emoji: "👕",
-    status: "Coming Soon",
-    desc: "Your Style, Your Rules. From bold graphics to AI designs, create apparel that speaks your language. No templates. No limits. Just pure expression.",
-    tags: ["AI", "Streetwear", "Design"],
-    color: "from-purple-500/20 to-indigo-500/20",
-    link: "https://www.threadz.studio/"
   },
   {
     title: "StayLinq",
